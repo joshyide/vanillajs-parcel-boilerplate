@@ -1,0 +1,17 @@
+{
+  "name": "vanillajs-parcel-boilerplate",
+  "version": "1.0.0",
+  "description": "A simple starter project for building Vanilla JS projects using [ParcelJS](https://parceljs.org/).",
+  "scripts": {
+    "dev": "rm -rf ./development && rm -rf ./.cache && parcel public/index.html --out-dir development -p 3000",
+    "build": "rm -rf ./dist && parcel build public/index.html --out-dir dist --public-url ./ --no-source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshyide/vanillajs-parcel-boilerplate.git"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.10"
+  }
+}
